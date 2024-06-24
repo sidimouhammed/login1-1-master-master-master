@@ -202,12 +202,15 @@ class _RectlmationState extends State<Rectlmation> {
             SizedBox(
               height: 10,
             ),
-            Text(
-                style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    foreground: Paint()..color = Colors.black),
-                'Nom de Matiere'),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(
+                  style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      foreground: Paint()..color = Colors.black),
+                  'Nom de Matiere'),
+            ),
             //Réseaux informatiques et Télécommunications L1
 
             fillier == "Réseaux informatiques et Télécommunications"
@@ -257,7 +260,10 @@ class _RectlmationState extends State<Rectlmation> {
                               ),
                             ),
                           )
-                        : Text('Appuyer un Semester')
+                        : Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Text('Appuyer un Semester'),
+                        )
 
                 //Développement Informatique L1
                 : fillier == "Développement Informatique"
@@ -308,7 +314,10 @@ class _RectlmationState extends State<Rectlmation> {
                                   ),
                                 ),
                               )
-                            : Text('Appuyer un Semester')
+                            : Padding(
+                              padding: const EdgeInsets.all(15.0),
+                              child: Text('Appuyer un Semester'),
+                            )
                     : Text(''),
 
             // if (_devoirOuExamen == "Devoir")
